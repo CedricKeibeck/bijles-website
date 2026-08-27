@@ -1,95 +1,37 @@
-# Bijleswebsite — GitHub Pages versie
+# Bijleswebsite — opgeschoonde GitHub Pages-versie
 
-Dit is een statische website (HTML/CSS/JavaScript). Daardoor is ze zeer geschikt voor **GitHub Pages**: geen server, database of build-stap nodig.
+Deze map kan rechtstreeks de bestaande bestanden in je GitHub-repository `bijles-website` vervangen.
 
-## 1. Eerst personaliseren
+## Wat is aangepast?
 
-Open `site-config.js` en pas minstens deze velden aan:
+- de layoutfout waarbij smalle secties tegen de linker browserrand stonden is opgelost;
+- alle secties delen nu dezelfde centrale contentkolom / uitlijning;
+- desktopbreedte en witruimte zijn verfijnd;
+- de portretplaceholder kan niet meer als een kapotte afbeelding verschijnen;
+- de lege reviewsectie en `Ervaringen`-link verdwijnen automatisch zolang er geen echte testimonials zijn;
+- naam, e-mail, telefoon, opleiding en tarief zijn zonder vierkante haken ingevuld;
+- mobiele navigatie en mobiele spacing zijn aangescherpt;
+- basis SEO-metadata, `robots.txt` en `sitemap.xml` zijn toegevoegd voor de huidige GitHub Pages-URL.
 
-- `firstName`
-- `fullName`
-- `education`
-- `email`
-- `phoneDisplay`
-- `phoneInternational`
-- `priceLabel`
-- praktische voorwaarden
+## Publiceren
 
-### Portretfoto
+Upload/vervang alle bestanden uit deze map in de root van:
 
-1. Zet je foto in de map `assets`, bijvoorbeeld `assets/profiel.jpg`.
-2. Verander in `site-config.js`:
+`https://github.com/cedrickeibeck/bijles-website`
 
-```js
-profileImage: "assets/profiel.jpg",
-```
+Commit de wijzigingen op `main`. GitHub Pages publiceert daarna automatisch de nieuwe versie.
 
-Een verticale foto werkt het best.
+## Eigen portret toevoegen
 
-### Echte testimonials
-
-Voeg alleen echte recensies toe in `site-config.js`:
+1. Voeg je foto toe als bijvoorbeeld `assets/cedric.jpg`.
+2. Pas in `site-config.js` aan:
 
 ```js
-testimonials: [
-  { quote: "Heel duidelijke uitleg ...", author: "Student, 1e bachelor" },
-  { quote: "...", author: "Leerling, 6e middelbaar" }
-]
+profileImage: "assets/cedric.jpg",
 ```
 
-Zolang de lijst leeg is, toont de site bewust geen verzonnen recensies.
+Gebruik bij voorkeur een verticale foto met voldoende ruimte rond je hoofd en schouders.
 
----
+## Persoonlijke gegevens
 
-## 2. Lokaal bekijken
-
-Je kunt `index.html` gewoon dubbelklikken. Nog beter is een kleine lokale webserver:
-
-```bash
-python -m http.server 8000
-```
-
-Ga daarna naar `http://localhost:8000`.
-
----
-
-## 3. Publiceren met GitHub Pages
-
-### Eenvoudigste methode
-
-1. Maak op GitHub een nieuwe repository, bijvoorbeeld `bijles-website`.
-2. Upload **alle bestanden en mappen uit deze map** naar de root van de repository.
-3. Open op GitHub: **Settings → Pages**.
-4. Kies bij **Build and deployment**:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/ (root)`
-5. Klik op **Save**.
-
-Na enkele minuten staat de site normaal op:
-
-`https://JOUW-GITHUB-NAAM.github.io/bijles-website/`
-
-Wil je de site rechtstreeks op `https://JOUW-GITHUB-NAAM.github.io/`, noem de repository dan exact:
-
-`JOUW-GITHUB-NAAM.github.io`
-
----
-
-## 4. Eigen domeinnaam koppelen
-
-GitHub Pages ondersteunt ook een eigen domein, bijvoorbeeld `jouwdomein.be`.
-
-Ga naar **Settings → Pages → Custom domain** en vul je domein in. Daarna moet je bij je domeinprovider de DNS-records naar GitHub Pages laten verwijzen. Zet daarna ook **Enforce HTTPS** aan.
-
----
-
-## Bestanden
-
-- `index.html` — inhoud en structuur
-- `styles.css` — ontwerp en responsive layout
-- `site-config.js` — persoonlijke gegevens
-- `script.js` — configuratie, mobiel menu en testimonials
-- `assets/` — portret en favicon
-
-De website gebruikt geen externe framework of betaalde dienst.
+Vrijwel alle gegevens staan in `site-config.js`. Daardoor hoef je voor toekomstige wijzigingen normaal niet in `index.html` te werken.

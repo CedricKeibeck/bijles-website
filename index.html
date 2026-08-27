@@ -6,6 +6,11 @@
   <meta name="description" content="Persoonlijke bijles in wiskunde, fysica, elektriciteit en programmeren in Hasselt en online, van middelbaar tot universiteit.">
   <meta name="theme-color" content="#173b69">
   <title>Bijles wiskunde, fysica & techniek | Hasselt en online</title>
+  <link rel="canonical" href="https://cedrickeibeck.github.io/bijles-website/">
+  <meta property="og:title" content="Bijles wiskunde, fysica & techniek | Hasselt en online">
+  <meta property="og:description" content="Persoonlijke bijles van middelbaar tot universiteit, met heldere uitleg en technische visualisaties.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cedrickeibeck.github.io/bijles-website/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -21,7 +26,7 @@
         <a href="#begeleiding">Begeleiding</a>
         <a href="#visualisaties">Visualisaties</a>
         <a href="#aanpak">Aanpak</a>
-        <a href="#ervaringen">Ervaringen</a>
+        <a href="#ervaringen" data-testimonials-nav>Ervaringen</a>
         <a href="#tarieven">Tarieven</a>
         <a href="#vragen">Vragen</a>
         <a href="#contact">Contact</a>
@@ -34,7 +39,7 @@
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">PERSOONLIJKE BIJLES IN HASSELT, LIMBURG EN ONLINE</p>
-          <h1>Bijles wiskunde,<br>fysica en techniek<br>met écht inzicht</h1>
+          <h1>Bijles wiskunde,<br>fysica en techniek<br>in Hasselt</h1>
           <p class="intro">
             Hallo! Ik ben <span data-bind="firstName">[Voornaam]</span>. Ik geef persoonlijke bijles aan leerlingen en studenten,
             van de eerste jaren middelbaar tot universiteit. We bouwen niet alleen naar het juiste antwoord toe: ik wil dat je ziet
@@ -63,7 +68,13 @@
         </div>
 
         <figure class="portrait-wrap">
-          <img class="portrait" data-bind-src="profileImage" src="assets/profile-placeholder.svg" alt="Portretfoto van de bijlesgever">
+          <div class="portrait-shell">
+            <img class="portrait" data-bind-src="profileImage" src="assets/profile-placeholder.svg" alt="Portretfoto van Cedric Keibeck">
+            <div class="portrait-fallback" aria-hidden="true">
+              <span>CK</span>
+              <small>Portretfoto</small>
+            </div>
+          </div>
         </figure>
       </div>
     </section>
@@ -71,7 +82,8 @@
     <div class="wrap"><hr></div>
 
     <section class="section" id="over-mij">
-      <div class="wrap content-width">
+      <div class="wrap">
+        <div class="content-width">
         <p class="eyebrow">OVER MIJ</p>
         <h2>Wie ik ben</h2>
         <p>
@@ -89,6 +101,7 @@
           analyse, differentiaalvergelijkingen, elektromagnetisme, circuitanalyse en ingenieursvakken aan de universiteit.
         </p>
         <p class="small-note"><strong>Opleiding:</strong> <span data-bind="education">[Vul hier je exacte opleiding(en) in]</span></p>
+      </div>
       </div>
     </section>
 
@@ -237,7 +250,8 @@
     <div class="wrap"><hr></div>
 
     <section class="section" id="aanpak">
-      <div class="wrap content-width">
+      <div class="wrap">
+        <div class="content-width">
         <p class="eyebrow">AANPAK</p>
         <h2>Hoe een bijles verloopt</h2>
         <ol class="steps">
@@ -248,11 +262,12 @@
           <li><strong>Na de les:</strong> je weet niet alleen welke oefeningen lukten, maar ook welke ideeën je nog moet herhalen en hoe je dat best doet.</li>
         </ol>
       </div>
+      </div>
     </section>
 
     <div class="wrap"><hr></div>
 
-    <section class="section testimonials-section" id="ervaringen">
+    <section class="section testimonials-section" id="ervaringen" data-testimonials-section>
       <div class="wrap">
         <p class="eyebrow">ERVARINGEN</p>
         <h2>Ervaringen van leerlingen en studenten</h2>
@@ -264,7 +279,8 @@
     <div class="wrap"><hr></div>
 
     <section class="section" id="tarieven">
-      <div class="wrap content-width">
+      <div class="wrap">
+        <div class="content-width">
         <p class="eyebrow">TARIEVEN</p>
         <h2>Duidelijke afspraken</h2>
         <div class="price-line">
@@ -279,12 +295,14 @@
           Voor langere sessies of terugkerende begeleiding kunnen we praktische afspraken maken die bij je planning passen.
         </p>
       </div>
+      </div>
     </section>
 
     <div class="wrap"><hr></div>
 
     <section class="section" id="vragen">
-      <div class="wrap content-width">
+      <div class="wrap">
+        <div class="content-width">
         <p class="eyebrow">VRAGEN</p>
         <h2>Veelgestelde vragen</h2>
         <div class="faq">
@@ -314,12 +332,14 @@
           </details>
         </div>
       </div>
+      </div>
     </section>
 
     <div class="wrap"><hr></div>
 
     <section class="section contact-section" id="contact">
-      <div class="wrap content-width">
+      <div class="wrap">
+        <div class="content-width">
         <p class="eyebrow">CONTACT</p>
         <h2>Plan een gratis kennismaking</h2>
         <p>Stuur me gerust een berichtje met het vak, je jaar en waar het moeilijk loopt. Ik antwoord zo snel mogelijk.</p>
@@ -328,6 +348,7 @@
           <a class="btn btn-secondary" data-bind-href="emailHref" href="#"><span data-bind="email">[e-mailadres]</span></a>
         </div>
         <p class="muted">Liever bellen? Dat kan op <a data-bind-href="phoneHref" href="#"><span data-bind="phoneDisplay">[telefoonnummer]</span></a>.</p>
+      </div>
       </div>
     </section>
   </main>

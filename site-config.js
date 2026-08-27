@@ -1,31 +1,25 @@
-/*
-  Pas hier je persoonlijke gegevens aan.
-  De rest van de website hoeft daarvoor niet gewijzigd te worden.
-*/
+/* Centrale persoonlijke instellingen. */
 window.SITE_CONFIG = {
-  firstName: "[Cedric]",
-  fullName: "[Keibeck Cedric]",
+  firstName: "Cedric",
+  fullName: "Cedric Keibeck",
 
-  // Vervang assets/profile-placeholder.svg door bv. assets/profiel.jpg
-  profileImage: "cedric.png",
+  // Vervang dit later door bijvoorbeeld: "assets/cedric.jpg"
+  profileImage: "assets/profile-placeholder.svg",
 
-  education: "[Master in ingenieurswetenschappen (energie) -- KU Leuven ; Doctoraatstudent vermogenelektronica -- KU Leuven]",
+  education: "Master in ingenieurswetenschappen (energie) – KU Leuven; doctoraatsstudent vermogenselektronica – KU Leuven",
 
-  // Contact
-  email: "[cedrickeibeck.bijles@gmail.com]",
-  phoneDisplay: "+32469255240",
-  phoneInternational: "+32469255240", // zonder spaties, bv. +32470123456
+  email: "cedrickeibeck.bijles@gmail.com",
+  phoneDisplay: "+32 469 25 52 40",
+  phoneInternational: "+32469255240",
 
-  // Tarief
   priceLabel: "€35 / uur",
   priceDetail: "Voor een individuele bijles van 60 minuten.",
 
-  // Praktisch
-  travelText: "Ik geef bijles in Hasselt en omgeving en online.",
-  cancellationText: "Kan een les niet doorgaan? Laat het zo vroeg mogelijk weten.",
+  travelText: "Ik geef bijles in Hasselt en omgeving en online. Woon je verder weg in Limburg? Stuur gerust een bericht; dan bekijken we wat praktisch haalbaar is.",
+  cancellationText: "Kan een les niet doorgaan? Laat het zo vroeg mogelijk weten, dan zoeken we samen een nieuw moment.",
 
-  // Voeg alleen echte testimonials toe. Laat de lijst leeg zolang je er nog geen hebt.
+  // Zolang deze lijst leeg is, worden de reviewsectie en de navigatielink verborgen.
   testimonials: [
-    // { quote: "Zeer duidelijke uitleg ...", author: "Student, 1e bachelor" }
+    // { quote: "Heel duidelijke uitleg ...", author: "Student, 1e bachelor" }
   ]
 };
