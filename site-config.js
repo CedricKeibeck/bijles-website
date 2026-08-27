@@ -7,9 +7,9 @@ window.SITE_CONFIG = {
   fullName: "[Keibeck Cedric]",
 
   // Vervang assets/profile-placeholder.svg door bv. assets/profiel.jpg
-  profileImage: "assets/profile-placeholder.svg",
+  profileImage: "cedric.png",
 
-  education: "[Master of Engineering: Energy -- KU Leuven ; Doctoraatstudent vermogenelektronica -- KU Leuven]",
+  education: "[Master in ingenieurswetenschappen (energie) -- KU Leuven ; Doctoraatstudent vermogenelektronica -- KU Leuven]",
 
   // Contact
   email: "[cedrickeibeck.bijles@gmail.com]",
@@ -17,7 +17,7 @@ window.SITE_CONFIG = {
   phoneInternational: "+32469255240", // zonder spaties, bv. +32470123456
 
   // Tarief
-  priceLabel: ".-€ 35",
+  priceLabel: "€35 / uur",
   priceDetail: "Voor een individuele bijles van 60 minuten.",
 
   // Praktisch
