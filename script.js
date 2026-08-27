@@ -51,8 +51,15 @@
     document.getElementById("testimonials-empty")?.remove();
     holder.innerHTML = testimonials.map((t) => `
       <article class="testimonial">
+        <div class="testimonial-topline">
+          <span class="testimonial-score" aria-label="Score ${t.score || 10} op 10">${t.score || 10}<small>/10</small></span>
+          <div>
+            <strong class="testimonial-author">${t.author || "Leerling/student"}</strong>
+            ${t.context ? `<span class="testimonial-context">${t.context}</span>` : ""}
+          </div>
+        </div>
+        ${t.subject ? `<div class="testimonial-subject">${t.subject}</div>` : ""}
         <blockquote>“${t.quote}”</blockquote>
-        <cite>${t.author || "Leerling/student"}</cite>
       </article>`).join("");
   } else {
     if (section?.previousElementSibling?.matches(".wrap")) section.previousElementSibling.hidden = true;

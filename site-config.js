@@ -19,8 +19,35 @@ window.SITE_CONFIG = {
   travelText: "Ik geef bijles in Hasselt en omgeving en online. Woon je verder weg in Limburg? Stuur gerust een bericht; dan bekijken we wat praktisch haalbaar is.",
   cancellationText: "Kan een les niet doorgaan? Laat het zo vroeg mogelijk weten, dan zoeken we samen een nieuw moment.",
 
-  // Zolang deze lijst leeg is, worden de reviewsectie en de navigatielink verborgen.
+  // Echte recensies uit eerdere bijlesbegeleiding.
   testimonials: [
-    // { quote: "Heel duidelijke uitleg ...", author: "Student, 1e bachelor" }
+    {
+      score: 9,
+      author: "Hugo Wiersma",
+      context: "Bachelor · Online",
+      subject: "Wiskunde: MATLAB",
+      quote: "Het is echt een super vriendelijk persoon die naast het bijlesgeven ook geïnteresseerd is om de persoon te leren kennen. Dit vind ik zeer aangenaam"
+    },
+    {
+      score: 10,
+      author: "Jasser Albuldaawy",
+      context: "Bachelor · Online",
+      subject: "Elektriciteit",
+      quote: "Ik vind het heel goed gaan. De onderwerpen die ik tot nu toe niet begreep met het gene waar we nu zijn begrijp ik nu wel goed."
+    },
+    {
+      score: 8,
+      author: "Katrien Vlaemynck",
+      context: "Derde graad · Online",
+      subject: "Elektronica",
+      quote: "Heel goed. Hij legt de leerstof goed uit en probeert het op een andere manier uit te leggen wanneer het de eerste keer nog niet duidelijk was."
+    },
+    {
+      score: 10,
+      author: "Lieve Smets",
+      context: "Tweede graad · Diest",
+      subject: "Elektriciteit, mechanica en wiskunde",
+      quote: "Zeer open houding, vlot in communicatie, luisterbereid naar gestelde leernoden, leerlinggericht, kortom: top!"
+    }
   ]
 };

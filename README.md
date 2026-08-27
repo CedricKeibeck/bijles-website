@@ -72,3 +72,9 @@ De website gebruikt deze SVG-bestanden rechtstreeks. De MATLAB-scripts blijven i
 ## v3.3
 - Hero: MATLAB/Illustrator-fact vervangen door inhoudelijke vakgebieden.
 - Visualisatiekaart over MMC veralgemeend naar elektrische schakelingen, stroompaden en vermogensstromen.
+
+## v3.4
+- Portretpad staat op `assets/cedric.jpg`.
+- Hoofdtitel: “Bijles wiskunde, fysica en elektriciteit in Hasselt”.
+- Vier echte recensies toegevoegd uit de aangeleverde review-screenshot.
+- Headermerk gewijzigd naar “Cedric Keibeck · bijles”.
