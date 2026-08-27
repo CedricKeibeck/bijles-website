@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760">
+  <rect width="600" height="760" fill="#eef2f6"/>
+  <circle cx="300" cy="270" r="112" fill="#c8d2de"/>
+  <path d="M120 680c22-156 105-244 180-244s158 88 180 244" fill="#c8d2de"/>
+  <text x="300" y="720" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#173b69">Vervang door je portretfoto</text>
+</svg>
