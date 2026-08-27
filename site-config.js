@@ -4,7 +4,7 @@ window.SITE_CONFIG = {
   fullName: "Cedric Keibeck",
 
   // Vervang dit later door bijvoorbeeld: "assets/cedric.jpg"
-  profileImage: "assets/cedric.jpg",
+  profileImage: "assets/cedric.png",
 
   education: "Master in ingenieurswetenschappen: energie – KU Leuven",
   currentRole: "Doctoraatsstudent vermogenselektronica – KU Leuven",

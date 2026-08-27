@@ -67,3 +67,8 @@ De aangeleverde MATLAB-exports staan nu rechtstreeks in `assets/visualisaties/`:
 - `omwentelingslichaam.svg`
 
 De website gebruikt deze SVG-bestanden rechtstreeks. De MATLAB-scripts blijven in `matlab/` staan zodat je later nieuwe versies kunt genereren.
+
+
+## v3.3
+- Hero: MATLAB/Illustrator-fact vervangen door inhoudelijke vakgebieden.
+- Visualisatiekaart over MMC veralgemeend naar elektrische schakelingen, stroompaden en vermogensstromen.
