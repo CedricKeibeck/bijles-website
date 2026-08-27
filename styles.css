@@ -106,6 +106,19 @@ p { margin: 0 0 15px; }
 .muted, .small-note { color: var(--muted); font-size: 13px; }
 .small-note { margin-top: 22px; }
 
+.profile-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin: 28px 0 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.profile-meta-item { padding: 15px 20px 15px 0; }
+.profile-meta-item + .profile-meta-item { border-left: 1px solid var(--line); padding-left: 24px; }
+.profile-meta dt { margin: 0 0 4px; color: var(--blue); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.profile-meta dd { margin: 0; color: var(--ink); font-size: 13px; line-height: 1.45; }
+
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.62fr) minmax(250px, .72fr);
@@ -190,15 +203,66 @@ li { margin: 3px 0; }
 .viz-list { margin-top: 36px; }
 .viz-item {
   display: grid;
-  grid-template-columns: 250px minmax(0, 1fr);
-  gap: 36px;
+  grid-template-columns: minmax(320px, 390px) minmax(0, 1fr);
+  gap: 42px;
   align-items: center;
-  padding: 25px 0;
+  padding: 30px 0;
   border-top: 1px solid var(--line);
 }
 .viz-item:last-child { border-bottom: 1px solid var(--line); }
-.viz-figure { min-height: 165px; display: grid; place-items: center; background: var(--soft); color: var(--blue); }
-.viz-figure svg { width: 94%; height: 160px; }
+.viz-figure {
+  position: relative;
+  margin: 0;
+  min-height: 220px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: var(--soft);
+  border: 1px solid #e7ebf0;
+}
+.viz-image {
+  display: block;
+  width: 100%;
+  height: 230px;
+  padding: 10px;
+  object-fit: contain;
+  background: #fff;
+}
+.viz-figure-wide .viz-image { height: 250px; padding: 4px; }
+
+/* MATLAB exports are panoramic figures; let their native aspect ratio breathe. */
+.viz-figure-matlab {
+  min-height: 0;
+  background: #fff;
+}
+.viz-figure-matlab .viz-image {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  padding: 0;
+  object-fit: contain;
+}
+.viz-image-fallback {
+  display: none;
+  max-width: 290px;
+  padding: 28px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+  text-align: center;
+}
+.viz-figure.is-fallback .viz-image { display: none; }
+.viz-figure.is-fallback .viz-image-fallback { display: block; }
+.viz-tool {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: var(--blue);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.viz-copy h3 { margin-bottom: 8px; }
 .viz-item p { margin: 0; color: var(--muted); max-width: 650px; }
 
 .steps { margin: 25px 0 0; padding-left: 22px; }
@@ -274,8 +338,12 @@ li { margin: 3px 0; }
   .fact + .fact { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; }
   .hero-actions { margin-top: 22px; }
   .subjects { grid-template-columns: 1fr; gap: 27px; }
-  .viz-item { grid-template-columns: 1fr; gap: 17px; }
-  .viz-figure { min-height: 150px; }
+  .viz-item { grid-template-columns: 1fr; gap: 18px; padding: 24px 0; }
+  .viz-figure { min-height: 180px; }
+  .viz-image, .viz-figure-wide .viz-image { height: auto; max-height: 300px; }
+  .profile-meta { grid-template-columns: 1fr; }
+  .profile-meta-item { padding: 14px 0; }
+  .profile-meta-item + .profile-meta-item { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; }
   .testimonials { grid-template-columns: 1fr; }
   .price-line { align-items: flex-start; flex-direction: column; }
   .price-note { text-align: left; }

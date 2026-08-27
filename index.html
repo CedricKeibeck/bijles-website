@@ -100,7 +100,16 @@
           Daardoor kan ik begeleiding geven over een brede leerlijn: van basisalgebra en de eerste lessen fysica in het middelbaar tot
           analyse, differentiaalvergelijkingen, elektromagnetisme, circuitanalyse en ingenieursvakken aan de universiteit.
         </p>
-        <p class="small-note"><strong>Opleiding:</strong> <span data-bind="education">[Vul hier je exacte opleiding(en) in]</span></p>
+        <dl class="profile-meta" aria-label="Academische achtergrond">
+          <div class="profile-meta-item">
+            <dt>Diploma</dt>
+            <dd data-bind="education">Master in ingenieurswetenschappen: energie – KU Leuven</dd>
+          </div>
+          <div class="profile-meta-item">
+            <dt>Huidige functie</dt>
+            <dd data-bind="currentRole">Doctoraatsstudent vermogenselektronica – KU Leuven</dd>
+          </div>
+        </dl>
       </div>
       </div>
     </section>
@@ -171,76 +180,62 @@
         <p class="eyebrow">VISUALISATIES</p>
         <h2>Als een concept abstract blijft, maken we het zichtbaar</h2>
         <p class="section-lead">
-          Ik ben sterk in het maken van didactische visualisaties in MATLAB en Adobe Illustrator. Dat is geen doel op zich: ik gebruik ze
-          precies wanneer een figuur, animatie of simulatie sneller inzicht geeft dan nog een extra blad formules.
+          Ik maak didactische visualisaties in MATLAB en Adobe Illustrator om abstracte leerstof concreet te maken. Hieronder staan echte voorbeelden uit mijn manier van werken: van wiskundige constructies en 3D-geometrie tot elektrische machines en vermogenselektronische schakelingen.
         </p>
 
         <div class="viz-list">
           <article class="viz-item">
-            <div class="viz-figure" aria-hidden="true">
-              <svg viewBox="0 0 320 210">
-                <circle cx="106" cy="105" r="63" fill="none" stroke="currentColor" stroke-width="2" opacity=".42"/>
-                <line x1="31" y1="105" x2="181" y2="105" stroke="currentColor" opacity=".28"/>
-                <line x1="106" y1="28" x2="106" y2="181" stroke="currentColor" opacity=".28"/>
-                <line x1="106" y1="105" x2="150" y2="59" stroke="currentColor" stroke-width="4"/>
-                <line x1="150" y1="59" x2="150" y2="105" stroke="currentColor" stroke-dasharray="4 4" opacity=".6"/>
-                <path d="M190 118 C208 76 226 76 244 118 S281 160 302 118" fill="none" stroke="currentColor" stroke-width="3"/>
-              </svg>
-            </div>
-            <div>
+            <figure class="viz-figure viz-figure-matlab">
+              <img class="viz-image" src="assets/visualisaties/goniometrische-cirkel.svg" alt="MATLAB-visualisatie van de goniometrische cirkel met sinus- en cosinusprojecties" loading="lazy">
+            </figure>
+            <div class="viz-copy">
+              <span class="viz-tool">MATLAB</span>
               <h3>Goniometrische cirkel</h3>
-              <p>Sinus, cosinus, hoeken en projecties worden één geometrisch verhaal in plaats van een verzameling regels.</p>
+              <p>De eenheidscirkel wordt rechtstreeks gekoppeld aan sinus, cosinus en hun projecties. Zo wordt zichtbaar waarom de goniometrische relaties werken in plaats van ze enkel als regels te memoriseren.</p>
             </div>
           </article>
 
           <article class="viz-item">
-            <div class="viz-figure" aria-hidden="true">
-              <svg viewBox="0 0 320 210">
-                <ellipse cx="160" cy="44" rx="58" ry="17" fill="none" stroke="currentColor" opacity=".38"/>
-                <ellipse cx="160" cy="105" rx="84" ry="26" fill="none" stroke="currentColor" opacity=".58"/>
-                <ellipse cx="160" cy="166" rx="38" ry="12" fill="none" stroke="currentColor" opacity=".38"/>
-                <path d="M102 44 C89 72 72 84 76 105 C81 133 118 149 122 166" fill="none" stroke="currentColor" stroke-width="3"/>
-                <path d="M218 44 C231 72 248 84 244 105 C239 133 202 149 198 166" fill="none" stroke="currentColor" stroke-width="3"/>
-                <line x1="160" y1="20" x2="160" y2="190" stroke="currentColor" stroke-dasharray="5 5" opacity=".35"/>
-              </svg>
-            </div>
-            <div>
+            <figure class="viz-figure viz-figure-matlab">
+              <img class="viz-image" src="assets/visualisaties/omwentelingslichaam.svg" alt="MATLAB-visualisatie van een vlakke functie die rond een as roteert tot een omwentelingslichaam" loading="lazy">
+            </figure>
+            <div class="viz-copy">
+              <span class="viz-tool">MATLAB</span>
               <h3>Omwentelingslichamen</h3>
-              <p>Van een 2D-functie naar een 3D-volume: je ziet welke oppervlakte roteert en waarom de integraal de juiste inhoud geeft.</p>
+              <p>Een 2D-profiel en het bijbehorende 3D-lichaam staan naast elkaar. Dat maakt concreet welke oppervlakte rond de as roteert en hoe de integraal geometrisch met het volume samenhangt.</p>
             </div>
           </article>
 
           <article class="viz-item">
-            <div class="viz-figure" aria-hidden="true">
-              <svg viewBox="0 0 320 210">
-                <path d="M43 105 H85 M121 105 H175 M211 105 H276 V160 H43 V105" fill="none" stroke="currentColor" stroke-width="3"/>
-                <path d="M85 105 l8 -13 l8 26 l8 -26 l12 13" fill="none" stroke="currentColor" stroke-width="3"/>
-                <line x1="175" y1="85" x2="175" y2="125" stroke="currentColor" stroke-width="3"/>
-                <line x1="187" y1="92" x2="187" y2="118" stroke="currentColor" stroke-width="3"/>
-                <circle cx="211" cy="105" r="19" fill="none" stroke="currentColor" stroke-width="3"/>
-                <path d="M201 105 h20 M211 95 v20" stroke="currentColor" stroke-width="2"/>
-              </svg>
-            </div>
-            <div>
-              <h3>Elektrische circuits</h3>
-              <p>Stroompaden, knooppunten, spanningen, tijdsconstanten en fasoren worden rechtstreeks gekoppeld aan het schema.</p>
+            <figure class="viz-figure viz-figure-wide">
+              <img class="viz-image" src="assets/visualisaties/elektrische-machine.svg" alt="Illustratorfiguur van een elektrische machine met driefasige voeding, magnetisch draaiveld en mechanisch vermogen" loading="lazy">
+            </figure>
+            <div class="viz-copy">
+              <span class="viz-tool">Adobe Illustrator</span>
+              <h3>Elektrische machines</h3>
+              <p>Een abstract energieketen wordt één overzicht: driefasige spanning creëert een magnetisch draaiveld, dat elektromagnetisch koppel en uiteindelijk mechanische rotatie veroorzaakt.</p>
             </div>
           </article>
 
           <article class="viz-item">
-            <div class="viz-figure" aria-hidden="true">
-              <svg viewBox="0 0 320 210">
-                <circle cx="102" cy="105" r="17" fill="none" stroke="currentColor" stroke-width="3"/>
-                <circle cx="218" cy="105" r="17" fill="none" stroke="currentColor" stroke-width="3"/>
-                <text x="96" y="112" font-size="20" fill="currentColor">+</text>
-                <text x="213" y="112" font-size="20" fill="currentColor">−</text>
-                <path d="M120 105 C148 80 172 80 200 105 M119 91 C145 49 177 49 201 91 M119 119 C145 161 177 161 201 119" fill="none" stroke="currentColor" stroke-width="2"/>
-                <path d="M112 82 C145 24 178 24 208 82 M112 128 C145 186 178 186 208 128" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".55"/>
-              </svg>
+            <figure class="viz-figure">
+              <img class="viz-image" src="assets/visualisaties/transformator.svg" alt="Illustratorfiguur van een transformator met wikkelingen en magnetische flux in de kern" loading="lazy">
+            </figure>
+            <div class="viz-copy">
+              <span class="viz-tool">Adobe Illustrator</span>
+              <h3>Transformatoren & magnetische flux</h3>
+              <p>Wikkelzin, fluxrichting en magnetische koppeling worden ruimtelijk getekend. Dat helpt om tekenconventies en inductiewetten te verbinden met wat er fysisch in de kern gebeurt.</p>
             </div>
-            <div>
-              <h3>Elektrische fenomenen</h3>
-              <p>Veldlijnen, potentiaal, elektromagnetische interacties en golfvormen worden veel intuïtiever wanneer je hun ruimtelijke vorm ziet.</p>
+          </article>
+
+          <article class="viz-item">
+            <figure class="viz-figure viz-figure-wide">
+              <img class="viz-image" src="assets/visualisaties/mmc-circuit.jpg" alt="Technische figuur van een modular multilevel converter met submodules, armimpedanties, transformator en netzijde" loading="lazy">
+            </figure>
+            <div class="viz-copy">
+              <span class="viz-tool">Adobe Illustrator</span>
+              <h3>Vermogenselektronische schakelingen</h3>
+              <p>Complexe omzetters kunnen stap voor stap worden ontleed: van individuele halfbrug-submodules en arminductanties tot de transformator en de koppeling met het driefasige net.</p>
             </div>
           </article>
         </div>

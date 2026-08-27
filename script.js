@@ -32,6 +32,16 @@
   portrait?.addEventListener("error", showPortraitFallback);
   if (portrait && portrait.complete && portrait.naturalWidth === 0) showPortraitFallback();
 
+
+  document.querySelectorAll(".viz-image").forEach((img) => {
+    const figure = img.closest(".viz-figure");
+    const showFallback = () => {
+      if (figure?.querySelector(".viz-image-fallback")) figure.classList.add("is-fallback");
+    };
+    img.addEventListener("error", showFallback);
+    if (img.complete && img.naturalWidth === 0) showFallback();
+  });
+
   const testimonials = Array.isArray(cfg.testimonials) ? cfg.testimonials.filter((t) => t && t.quote) : [];
   const holder = document.getElementById("testimonials");
   const section = document.querySelector("[data-testimonials-section]");

@@ -4,9 +4,10 @@ window.SITE_CONFIG = {
   fullName: "Cedric Keibeck",
 
   // Vervang dit later door bijvoorbeeld: "assets/cedric.jpg"
-  profileImage: "assets/cedric.jpg",
+  profileImage: "assets/cedric.png",
 
-  education: "Master in ingenieurswetenschappen (energie) – KU Leuven; doctoraatsstudent vermogenselektronica – KU Leuven",
+  education: "Master in ingenieurswetenschappen: energie – KU Leuven",
+  currentRole: "Doctoraatsstudent vermogenselektronica – KU Leuven",
 
   email: "cedrickeibeck.bijles@gmail.com",
   phoneDisplay: "+32 469 25 52 40",
