@@ -399,3 +399,11 @@ li { margin: 3px 0; }
   .contact-actions, .hero-actions { align-items: stretch; }
   .portrait-wrap { width: 100%; }
 }
+
+
+.privacy-note {
+  margin-top: 1rem;
+  color: var(--muted, #5f6b7a);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}

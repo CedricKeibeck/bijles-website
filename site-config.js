@@ -23,29 +23,25 @@ window.SITE_CONFIG = {
   testimonials: [
     {
       score: 9,
-      author: "Hugo Wiersma",
-      context: "Bachelor · Online",
+      author: "Student A",
       subject: "Wiskunde: MATLAB",
       quote: "Het is echt een super vriendelijk persoon die naast het bijlesgeven ook geïnteresseerd is om de persoon te leren kennen. Dit vind ik zeer aangenaam"
     },
     {
       score: 10,
-      author: "Jasser Albuldaawy",
-      context: "Bachelor · Online",
+      author: "Student B",
       subject: "Elektriciteit",
       quote: "Ik vind het heel goed gaan. De onderwerpen die ik tot nu toe niet begreep met het gene waar we nu zijn begrijp ik nu wel goed."
     },
     {
       score: 8,
-      author: "Katrien Vlaemynck",
-      context: "Derde graad · Online",
+      author: "Leerling C",
       subject: "Elektronica",
       quote: "Heel goed. Hij legt de leerstof goed uit en probeert het op een andere manier uit te leggen wanneer het de eerste keer nog niet duidelijk was."
     },
     {
       score: 10,
-      author: "Lieve Smets",
-      context: "Tweede graad · Diest",
+      author: "Leerling D",
       subject: "Elektriciteit, mechanica en wiskunde",
       quote: "Zeer open houding, vlot in communicatie, luisterbereid naar gestelde leernoden, leerlinggericht, kortom: top!"
     }
