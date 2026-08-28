@@ -3,7 +3,7 @@ window.SITE_CONFIG = {
   firstName: "Cedric",
   fullName: "Cedric Keibeck",
 
-  // Vervang dit later door bijvoorbeeld: "assets/cedric.jpg"
+  // De live website gebruikt bewust cedric.jpg.
   profileImage: "assets/cedric.jpg",
 
   education: "Master in ingenieurswetenschappen: energie – KU Leuven",
@@ -19,7 +19,7 @@ window.SITE_CONFIG = {
   travelText: "Ik geef bijles in Hasselt en omgeving en online. Woon je verder weg in Limburg? Stuur gerust een bericht; dan bekijken we wat praktisch haalbaar is.",
   cancellationText: "Kan een les niet doorgaan? Laat het zo vroeg mogelijk weten, dan zoeken we samen een nieuw moment.",
 
-  // Echte recensies uit eerdere bijlesbegeleiding.
+  // Namen en identificerende details zijn bewust geanonimiseerd.
   testimonials: [
     {
       score: 9,

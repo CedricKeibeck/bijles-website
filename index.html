@@ -3,22 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Persoonlijke bijles in wiskunde, fysica, elektriciteit en programmeren in Hasselt en online, van middelbaar tot universiteit.">
-  <meta name="theme-color" content="#173b69">
+  <meta name="description" content="Persoonlijke bijles wiskunde, fysica en elektriciteit in Hasselt en online, van middelbaar tot universiteit. Duidelijke uitleg met aandacht voor inzicht en visualisatie.">
+  <meta name="theme-color" content="#173f70">
   <title>Bijles wiskunde, fysica en elektriciteit in Hasselt | Cedric Keibeck</title>
-  <link rel="canonical" href="https://cedrickeibeck.github.io/bijles-website/">
+  <link rel="canonical" href="https://bijlescedric.be/">
   <meta property="og:title" content="Bijles wiskunde, fysica en elektriciteit in Hasselt | Cedric Keibeck">
   <meta property="og:description" content="Persoonlijke bijles van middelbaar tot universiteit, met heldere uitleg en technische visualisaties.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://cedrickeibeck.github.io/bijles-website/">
+  <meta property="og:url" content="https://bijlescedric.be/">
+  <meta property="og:locale" content="nl_BE">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Bijles wiskunde, fysica en elektriciteit in Hasselt",
+    "url": "https://bijlescedric.be/",
+    "description": "Persoonlijke bijles wiskunde, fysica en elektriciteit van middelbaar tot universiteit.",
+    "areaServed": {"@type": "City", "name": "Hasselt"},
+    "provider": {
+      "@type": "Person",
+      "name": "Cedric Keibeck",
+      "jobTitle": "Doctoraatsstudent vermogenselektronica"
+    }
+  }
+  </script>
 </head>
 <body>
   <header class="site-header" id="top">
     <div class="wrap nav-wrap">
       <a class="brand" href="#top" aria-label="Naar boven">
-        <strong>Cedric Keibeck</strong><span class="brand-subtitle"> · bijles</span>
+        <span class="brand-mark" aria-hidden="true">C</span>
+        <span class="brand-copy"><strong>Cedric</strong><small>bijles met inzicht</small></span>
       </a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Navigatie openen">Menu</button>
       <nav class="site-nav" id="site-nav" aria-label="Hoofdnavigatie">
@@ -29,331 +46,258 @@
         <a href="#ervaringen" data-testimonials-nav>Ervaringen</a>
         <a href="#tarieven">Tarieven</a>
         <a href="#vragen">Vragen</a>
-        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero section">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">PERSOONLIJKE BIJLES IN HASSELT, LIMBURG EN ONLINE</p>
-          <h1>Bijles wiskunde,<br>fysica en elektriciteit<br>in Hasselt</h1>
-          <p class="intro">
-            Hallo! Ik ben <span data-bind="firstName">[Voornaam]</span>. Ik geef persoonlijke bijles aan leerlingen en studenten,
-            van de eerste jaren middelbaar tot universiteit. We bouwen niet alleen naar het juiste antwoord toe: ik wil dat je ziet
-            <em>waarom</em> een concept werkt en hoe alles samenhangt.
-          </p>
+    <section class="section hero">
+      <div class="wrap">
+        <div class="hero-card">
+          <div class="hero-copy">
+            <p class="eyebrow">PERSOONLIJKE BIJLES · HASSELT & ONLINE</p>
+            <h1>Bijles wiskunde,<br>fysica en elektriciteit<br>in Hasselt</h1>
+            <p class="intro">
+              Hallo! Ik ben <span data-bind="firstName">Cedric</span>. Ik geef persoonlijke bijles aan leerlingen en studenten,
+              van de eerste jaren middelbaar tot universiteit. We bouwen niet alleen naar het juiste antwoord toe: ik wil dat je ziet
+              <em>waarom</em> een concept werkt en hoe alles samenhangt.
+            </p>
 
-          <div class="facts" aria-label="Sterke punten">
-            <div class="fact">
-              <strong>Van middelbaar tot universiteit</strong>
-              <span>begeleiding over alle moeilijkheidsgraden</span>
+            <div class="hero-actions">
+              <a class="btn btn-primary" data-bind-href="whatsAppHref" href="#contact">Stuur een WhatsApp</a>
+              <a class="btn btn-secondary" data-bind-href="emailHref" href="#contact">Stuur een mail</a>
             </div>
-            <div class="fact">
-              <strong>Wiskunde, fysica & techniek</strong>
-              <span>breed aanbod, steeds afgestemd op jouw leerstof</span>
-            </div>
-            <div class="fact">
-              <strong>Gratis</strong>
-              <span>eerste kennismaking</span>
+
+            <div class="facts" aria-label="Sterke punten">
+              <div class="fact"><span class="fact-dot"></span><div><strong>Middelbaar → universiteit</strong><span>niveau en tempo op maat</span></div></div>
+              <div class="fact"><span class="fact-dot"></span><div><strong>Wiskunde · fysica · elektriciteit</strong><span>breed aanbod, niet beperkend</span></div></div>
+              <div class="fact"><span class="fact-dot"></span><div><strong>Gratis kennismaking</strong><span>eerst kijken wat je nodig hebt</span></div></div>
             </div>
           </div>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" data-bind-href="whatsAppHref" href="#contact">Stuur een WhatsApp</a>
-            <a class="btn btn-secondary" data-bind-href="emailHref" href="#contact">Stuur een mail</a>
-          </div>
+          <figure class="portrait-wrap">
+            <div class="portrait-backdrop" aria-hidden="true"></div>
+            <div class="portrait-shell">
+              <img class="portrait" data-bind-src="profileImage" src="assets/profile-placeholder.svg" alt="Portretfoto van Cedric Keibeck">
+              <div class="portrait-fallback" aria-hidden="true"><span>CK</span><small>Portretfoto</small></div>
+            </div>
+            <figcaption class="portrait-note">ingenieur · doctoraatsonderzoeker</figcaption>
+          </figure>
         </div>
-
-        <figure class="portrait-wrap">
-          <div class="portrait-shell">
-            <img class="portrait" data-bind-src="profileImage" src="assets/profile-placeholder.svg" alt="Portretfoto van Cedric Keibeck">
-            <div class="portrait-fallback" aria-hidden="true">
-              <span>CK</span>
-              <small>Portretfoto</small>
-            </div>
-          </div>
-        </figure>
       </div>
     </section>
-
-    <div class="wrap"><hr></div>
 
     <section class="section" id="over-mij">
-      <div class="wrap">
-        <div class="content-width">
-        <p class="eyebrow">OVER MIJ</p>
-        <h2>Wie ik ben</h2>
-        <p>
-          Ik ben <strong data-bind="fullName">[Jouw naam]</strong>, ingenieur en doctoraatsonderzoeker met een sterke achtergrond in
-          wiskunde, fysica, elektrotechniek, energiesystemen, vermogenselektronica en batterijtechnologie. Mijn academische werk draait
-          dagelijks rond modellering, analyse en het inzichtelijk maken van complexe technische systemen.
-        </p>
-        <p>
-          Diezelfde manier van denken gebruik ik in bijlessen. Een formule is voor mij nooit alleen iets om uit het hoofd te leren:
-          we koppelen ze aan een grafiek, een geometrische interpretatie, een elektrisch schema of een fysisch verschijnsel. Wanneer
-          een idee moeilijk te visualiseren is, maak ik indien nuttig zelf een figuur of simulatie in MATLAB of Adobe Illustrator.
-        </p>
-        <p>
-          Daardoor kan ik begeleiding geven over een brede leerlijn: van basisalgebra en de eerste lessen fysica in het middelbaar tot
-          analyse, differentiaalvergelijkingen, elektromagnetisme, circuitanalyse en ingenieursvakken aan de universiteit.
-        </p>
-        <dl class="profile-meta" aria-label="Academische achtergrond">
-          <div class="profile-meta-item">
-            <dt>Diploma</dt>
-            <dd data-bind="education">Master in ingenieurswetenschappen: energie – KU Leuven</dd>
-          </div>
-          <div class="profile-meta-item">
-            <dt>Huidige functie</dt>
-            <dd data-bind="currentRole">Doctoraatsstudent vermogenselektronica – KU Leuven</dd>
-          </div>
-        </dl>
-      </div>
+      <div class="wrap about-grid">
+        <div class="section-heading sticky-heading">
+          <p class="eyebrow">OVER MIJ</p>
+          <h2>Technische diepgang,<br>helder uitgelegd.</h2>
+          <p class="section-lead">Mijn doel is niet dat je een trucje onthoudt, maar dat het concept logisch begint te voelen.</p>
+        </div>
+        <div class="about-content">
+          <p>
+            Ik ben <strong data-bind="fullName">Cedric Keibeck</strong>, ingenieur en doctoraatsonderzoeker met een sterke achtergrond in
+            wiskunde, fysica, elektrotechniek, energiesystemen, vermogenselektronica en batterijtechnologie. Mijn academische werk draait
+            dagelijks rond modellering, analyse en het inzichtelijk maken van complexe technische systemen.
+          </p>
+          <p>
+            Diezelfde manier van denken gebruik ik in bijlessen. Een formule is voor mij nooit alleen iets om uit het hoofd te leren:
+            we koppelen ze aan een grafiek, een geometrische interpretatie, een elektrisch schema of een fysisch verschijnsel. Wanneer
+            een idee moeilijk te visualiseren is, maak ik indien nuttig zelf een figuur of simulatie in MATLAB of Adobe Illustrator.
+          </p>
+          <p>
+            Daardoor kan ik begeleiding geven over een brede leerlijn: van basisalgebra en de eerste lessen fysica in het middelbaar tot
+            analyse, differentiaalvergelijkingen, elektromagnetisme, circuitanalyse en ingenieursvakken aan de universiteit.
+          </p>
+
+          <dl class="profile-meta" aria-label="Academische achtergrond">
+            <div class="profile-meta-item">
+              <dt>Diploma</dt>
+              <dd data-bind="education">Master in ingenieurswetenschappen: energie – KU Leuven</dd>
+            </div>
+            <div class="profile-meta-item">
+              <dt>Huidige functie</dt>
+              <dd data-bind="currentRole">Doctoraatsstudent vermogenselektronica – KU Leuven</dd>
+            </div>
+          </dl>
+        </div>
       </div>
     </section>
 
-    <div class="wrap"><hr></div>
-
-    <section class="section" id="begeleiding">
+    <section class="section section-soft" id="begeleiding">
       <div class="wrap">
-        <p class="eyebrow">BEGELEIDING</p>
-        <h2>Waarmee ik kan helpen</h2>
-        <p class="section-lead">
-          We vertrekken altijd van jouw cursus, jouw voorkennis en het niveau dat je nodig hebt. Onderstaande lijst is dus niet beperkend.
-        </p>
+        <div class="section-heading centered-heading">
+          <p class="eyebrow">BEGELEIDING</p>
+          <h2>Waarmee ik kan helpen</h2>
+          <p class="section-lead">We vertrekken altijd van jouw cursus, voorkennis en doel. De voorbeelden hieronder zijn dus bewust niet beperkend.</p>
+        </div>
 
         <div class="subjects">
           <article class="subject">
+            <div class="subject-icon">∑</div>
             <h3>Wiskunde</h3>
             <p>Van basisvaardigheden tot universitaire analyse.</p>
             <ul>
-              <li>Algebra, vergelijkingen en functies</li>
-              <li>Meetkunde en goniometrie</li>
-              <li>Afgeleiden, integralen en reeksen</li>
-              <li>Vectoren en lineaire algebra</li>
-              <li>Differentiaalvergelijkingen en numerieke methoden</li>
+              <li>Algebra, vergelijkingen en functies</li><li>Meetkunde en goniometrie</li><li>Afgeleiden, integralen en reeksen</li><li>Vectoren en lineaire algebra</li><li>Differentiaalvergelijkingen en numerieke methoden</li>
             </ul>
           </article>
           <article class="subject">
+            <div class="subject-icon">F</div>
             <h3>Fysica</h3>
             <p>De fysische betekenis eerst, de formule daarna.</p>
             <ul>
-              <li>Mechanica, krachten, arbeid en energie</li>
-              <li>Trillingen, golven en optica</li>
-              <li>Elektriciteit en magnetisme</li>
-              <li>Thermodynamica</li>
-              <li>Fysische modellering op universitair niveau</li>
+              <li>Mechanica, krachten, arbeid en energie</li><li>Trillingen, golven en optica</li><li>Elektriciteit en magnetisme</li><li>Thermodynamica</li><li>Fysische modellering op universitair niveau</li>
             </ul>
           </article>
           <article class="subject">
+            <div class="subject-icon">⚡</div>
             <h3>Elektriciteit & elektrotechniek</h3>
             <p>Van de eerste schakeling tot ingenieursvakken.</p>
             <ul>
-              <li>Spanning, stroom, weerstand en vermogen</li>
-              <li>Kirchhoff, Thévenin en Norton</li>
-              <li>AC-netwerken, fasoren en driefasige systemen</li>
-              <li>Elektrische machines en elektromagnetische principes</li>
-              <li>Vermogenselektronica en energiesystemen</li>
+              <li>Spanning, stroom, weerstand en vermogen</li><li>Kirchhoff, Thévenin en Norton</li><li>AC-netwerken, fasoren en driefasige systemen</li><li>Elektrische machines en elektromagnetische principes</li><li>Vermogenselektronica en energiesystemen</li>
             </ul>
           </article>
           <article class="subject">
+            <div class="subject-icon">&gt;_</div>
             <h3>Programmeren & MATLAB</h3>
-            <p>Programmeren gebruiken als gereedschap om een probleem te begrijpen.</p>
+            <p>Programmeren als gereedschap om een probleem te begrijpen.</p>
             <ul>
-              <li>Logisch denken en programmeerbasis</li>
-              <li>MATLAB scripts en functies</li>
-              <li>Numerieke berekeningen en simulaties</li>
-              <li>Data-analyse en grafieken</li>
-              <li>Technische visualisaties en animaties</li>
+              <li>Logisch denken en programmeerbasis</li><li>MATLAB scripts en functies</li><li>Numerieke berekeningen en simulaties</li><li>Data-analyse en grafieken</li><li>Technische visualisaties en animaties</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <div class="wrap"><hr></div>
-
     <section class="section" id="visualisaties">
       <div class="wrap">
-        <p class="eyebrow">VISUALISATIES</p>
-        <h2>Als een concept abstract blijft, maken we het zichtbaar</h2>
-        <p class="section-lead">
-          Ik maak didactische visualisaties in MATLAB en Adobe Illustrator om abstracte leerstof concreet te maken. Hieronder staan enkele voorbeelden uit mijn manier van werken: van wiskundige constructies en 3D-geometrie tot elektrische machines en elektrische schakelingen.
-        </p>
+        <div class="visuals-shell">
+          <div class="section-heading visuals-heading">
+            <p class="eyebrow">VISUALISATIES</p>
+            <h2>Als een concept abstract blijft, maken we het zichtbaar.</h2>
+            <p class="section-lead">Ik gebruik MATLAB en Adobe Illustrator wanneer een figuur sneller inzicht geeft dan nog een blad formules. Sleep, swipe of klik op een kaart om door de voorbeelden te bladeren.</p>
+          </div>
 
-        <div class="viz-list">
-          <article class="viz-item">
-            <figure class="viz-figure viz-figure-matlab">
-              <img class="viz-image" src="assets/visualisaties/goniometrische-cirkel.svg" alt="MATLAB-visualisatie van de goniometrische cirkel met sinus- en cosinusprojecties" loading="lazy">
-            </figure>
-            <div class="viz-copy">
-              <span class="viz-tool">MATLAB</span>
-              <h3>Goniometrische cirkel</h3>
-              <p>De eenheidscirkel wordt rechtstreeks gekoppeld aan sinus, cosinus en hun projecties. Zo wordt zichtbaar waarom de goniometrische relaties werken in plaats van ze enkel als regels te memoriseren.</p>
+          <div class="fan-carousel fan-carousel-visuals" data-fan-carousel aria-label="Voorbeelden van technische visualisaties">
+            <div class="fan-stage" data-fan-stage tabindex="0" aria-roledescription="carousel">
+              <article class="fan-card viz-card">
+                <figure class="viz-figure viz-figure-matlab"><img class="viz-image" src="assets/visualisaties/goniometrische-cirkel.svg" alt="MATLAB-visualisatie van de goniometrische cirkel met sinus- en cosinusprojecties" loading="lazy" draggable="false"></figure>
+                <div class="viz-copy"><span class="viz-tool">MATLAB</span><h3>Goniometrische cirkel</h3><p>De eenheidscirkel wordt gekoppeld aan sinus, cosinus en hun projecties. Zo zie je waarom de relaties werken in plaats van ze alleen te memoriseren.</p></div>
+              </article>
+              <article class="fan-card viz-card">
+                <figure class="viz-figure viz-figure-matlab"><img class="viz-image" src="assets/visualisaties/omwentelingslichaam.svg" alt="MATLAB-visualisatie van een vlakke functie die rond een as roteert tot een omwentelingslichaam" loading="lazy" draggable="false"></figure>
+                <div class="viz-copy"><span class="viz-tool">MATLAB</span><h3>Omwentelingslichamen</h3><p>Een 2D-profiel en het bijbehorende 3D-lichaam staan naast elkaar. Dat maakt de geometrische betekenis van de integraal zichtbaar.</p></div>
+              </article>
+              <article class="fan-card viz-card">
+                <figure class="viz-figure"><img class="viz-image" src="assets/visualisaties/elektrische-machine.svg" alt="Illustratorfiguur van een elektrische machine" loading="lazy" draggable="false"></figure>
+                <div class="viz-copy"><span class="viz-tool">Adobe Illustrator</span><h3>Elektrische machines</h3><p>Magnetische velden, draaiveld, koppel en energiestromen kunnen in één overzicht gekoppeld worden aan de fysica achter de machine.</p></div>
+              </article>
+              <article class="fan-card viz-card">
+                <figure class="viz-figure"><img class="viz-image" src="assets/visualisaties/transformator.svg" alt="Illustratorfiguur van een transformator met wikkelingen en magnetische flux" loading="lazy" draggable="false"></figure>
+                <div class="viz-copy"><span class="viz-tool">Adobe Illustrator</span><h3>Transformatoren & magnetische flux</h3><p>Wikkelzin, fluxrichting en magnetische koppeling worden ruimtelijk zichtbaar, zodat tekenconventies en inductiewetten logisch samenkomen.</p></div>
+              </article>
+              <article class="fan-card viz-card">
+                <figure class="viz-figure"><img class="viz-image" src="assets/visualisaties/mmc-circuit.jpg" alt="Voorbeeld van een technisch elektrisch schakelschema" loading="lazy" draggable="false"></figure>
+                <div class="viz-copy"><span class="viz-tool">Adobe Illustrator</span><h3>Elektrische schakelingen & vermogensstromen</h3><p>Door stroompaden, spanningen en vermogensstromen rechtstreeks op een schema zichtbaar te maken, worden zowel eenvoudige als uitgebreidere schakelingen intuïtiever.</p></div>
+              </article>
             </div>
-          </article>
-
-          <article class="viz-item">
-            <figure class="viz-figure viz-figure-matlab">
-              <img class="viz-image" src="assets/visualisaties/omwentelingslichaam.svg" alt="MATLAB-visualisatie van een vlakke functie die rond een as roteert tot een omwentelingslichaam" loading="lazy">
-            </figure>
-            <div class="viz-copy">
-              <span class="viz-tool">MATLAB</span>
-              <h3>Omwentelingslichamen</h3>
-              <p>Een 2D-profiel en het bijbehorende 3D-lichaam staan naast elkaar. Dat maakt concreet welke oppervlakte rond de as roteert en hoe de integraal geometrisch met het volume samenhangt.</p>
+            <div class="carousel-controls">
+              <button class="carousel-arrow" type="button" data-fan-prev aria-label="Vorige visualisatie">←</button>
+              <div class="carousel-dots" data-fan-dots aria-label="Kies visualisatie"></div>
+              <button class="carousel-arrow" type="button" data-fan-next aria-label="Volgende visualisatie">→</button>
             </div>
-          </article>
-
-          <article class="viz-item">
-            <figure class="viz-figure viz-figure-wide">
-              <img class="viz-image" src="assets/visualisaties/elektrische-machine.svg" alt="Illustratorfiguur van een elektrische machine met driefasige voeding, magnetisch draaiveld en mechanisch vermogen" loading="lazy">
-            </figure>
-            <div class="viz-copy">
-              <span class="viz-tool">Adobe Illustrator</span>
-              <h3>Elektrische machines</h3>
-              <p>Een abstract energieketen wordt één overzicht: driefasige spanning creëert een magnetisch draaiveld, dat elektromagnetisch koppel en uiteindelijk mechanische rotatie veroorzaakt.</p>
-            </div>
-          </article>
-
-          <article class="viz-item">
-            <figure class="viz-figure">
-              <img class="viz-image" src="assets/visualisaties/transformator.svg" alt="Illustratorfiguur van een transformator met wikkelingen en magnetische flux in de kern" loading="lazy">
-            </figure>
-            <div class="viz-copy">
-              <span class="viz-tool">Adobe Illustrator</span>
-              <h3>Transformatoren & magnetische flux</h3>
-              <p>Wikkelzin, fluxrichting en magnetische koppeling worden ruimtelijk getekend. Dat helpt om tekenconventies en inductiewetten te verbinden met wat er fysisch in de kern gebeurt.</p>
-            </div>
-          </article>
-
-          <article class="viz-item">
-            <figure class="viz-figure viz-figure-wide">
-              <img class="viz-image" src="assets/visualisaties/mmc-circuit.jpg" alt="Technische figuur van een modular multilevel converter met submodules, armimpedanties, transformator en netzijde" loading="lazy">
-            </figure>
-            <div class="viz-copy">
-              <span class="viz-tool">Adobe Illustrator</span>
-              <h3>Elektrische schakelingen & vermogensstromen</h3>
-              <p>Door stroompaden, spanningen en vermogensstromen rechtstreeks op een schema zichtbaar te maken, worden elektrische schakelingen veel intuïtiever. Dat helpt zowel bij basisconcepten zoals Kirchhoff en Thévenin als bij uitgebreidere circuits.</p>
-            </div>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <div class="wrap"><hr></div>
-
-    <section class="section" id="aanpak">
-      <div class="wrap">
-        <div class="content-width">
-        <p class="eyebrow">AANPAK</p>
-        <h2>Hoe een bijles verloopt</h2>
+    <section class="section section-soft" id="aanpak">
+      <div class="wrap approach-grid">
+        <div class="section-heading sticky-heading">
+          <p class="eyebrow">AANPAK</p>
+          <h2>Van “ik snap het niet” naar “dit is logisch”.</h2>
+          <p class="section-lead">De les volgt geen vast script. Wel gebruik ik een vaste denklijn om snel te vinden waar de moeilijkheid zit.</p>
+        </div>
         <ol class="steps">
-          <li><strong>Vooraf:</strong> je stuurt me het vak, je jaar en indien mogelijk de leerstof of oefeningen waarmee je moeite hebt.</li>
-          <li><strong>Diagnose:</strong> we zoeken eerst waar het precies misloopt — voorkennis, conceptueel begrip, rekenvaardigheid of examenstrategie.</li>
-          <li><strong>Uitleg:</strong> ik bouw het concept opnieuw op, stap voor stap en op jouw niveau. Waar nuttig gebruik ik een schema, grafiek, MATLAB-visualisatie of zelfgemaakte figuur.</li>
-          <li><strong>Toepassing:</strong> we lossen gerichte oefeningen op en verschuiven geleidelijk van samen werken naar zelfstandig redeneren.</li>
-          <li><strong>Na de les:</strong> je weet niet alleen welke oefeningen lukten, maar ook welke ideeën je nog moet herhalen en hoe je dat best doet.</li>
+          <li><span class="step-number">1</span><div><strong>Vooraf</strong><p>Je stuurt het vak, je jaar en indien mogelijk de leerstof of oefeningen waarmee je moeite hebt.</p></div></li>
+          <li><span class="step-number">2</span><div><strong>Diagnose</strong><p>We zoeken waar het precies misloopt: voorkennis, begrip, rekenvaardigheid of examenstrategie.</p></div></li>
+          <li><span class="step-number">3</span><div><strong>Uitleg</strong><p>Ik bouw het concept opnieuw op, stap voor stap. Waar nuttig gebruik ik een schema, grafiek of visualisatie.</p></div></li>
+          <li><span class="step-number">4</span><div><strong>Toepassing</strong><p>We lossen gerichte oefeningen op en verschuiven geleidelijk van samen werken naar zelfstandig redeneren.</p></div></li>
+          <li><span class="step-number">5</span><div><strong>Na de les</strong><p>Je weet welke ideeën je nog moet herhalen én hoe je dat het best aanpakt.</p></div></li>
         </ol>
-      </div>
       </div>
     </section>
 
-    <div class="wrap"><hr></div>
-
     <section class="section testimonials-section" id="ervaringen" data-testimonials-section>
       <div class="wrap">
-        <p class="eyebrow">ERVARINGEN</p>
-        <h2>Wat leerlingen en studenten zeggen</h2>
-        <p class="section-lead">Een selectie van recensies uit eerdere bijlesbegeleiding.</p>
-        <div id="testimonials" class="testimonials" aria-live="polite"></div>
+        <div class="section-heading centered-heading">
+          <p class="eyebrow">ERVARINGEN</p>
+          <h2>Wat leerlingen en studenten zeggen</h2>
+          <p class="section-lead">Een selectie van recensies uit eerdere bijlesbegeleiding. Sleep, swipe of klik om een andere recensie naar voren te halen.</p>
+        </div>
+
+        <div class="fan-carousel fan-carousel-reviews" data-fan-carousel data-dynamic-carousel aria-label="Recensies">
+          <div class="fan-stage" id="testimonials" data-fan-stage tabindex="0" aria-roledescription="carousel" aria-live="polite"></div>
+          <div class="carousel-controls">
+            <button class="carousel-arrow" type="button" data-fan-prev aria-label="Vorige recensie">←</button>
+            <div class="carousel-dots" data-fan-dots aria-label="Kies recensie"></div>
+            <button class="carousel-arrow" type="button" data-fan-next aria-label="Volgende recensie">→</button>
+          </div>
+        </div>
         <p class="privacy-note">Namen en identificerende details zijn aangepast of weggelaten om de privacy van leerlingen en studenten te beschermen.</p>
         <p id="testimonials-empty" class="muted">Nog geen recensies toegevoegd.</p>
       </div>
     </section>
 
-    <div class="wrap"><hr></div>
+    <section class="section practical-section" id="tarieven">
+      <div class="wrap practical-grid">
+        <div class="price-card">
+          <p class="eyebrow">TARIEVEN</p>
+          <h2>Duidelijke afspraken</h2>
+          <div class="price-bubble"><strong data-bind="priceLabel">€35 / uur</strong><span data-bind="priceDetail">Voor een individuele bijles van 60 minuten.</span></div>
+          <p>De eerste kennismaking is gratis. We bespreken kort je vak, niveau, leerdoel en de manier waarop ik je het best kan helpen.</p>
+          <span class="small-note">Geen registratie- of administratiekosten.</span>
+        </div>
 
-    <section class="section" id="tarieven">
-      <div class="wrap">
-        <div class="content-width">
-        <p class="eyebrow">TARIEVEN</p>
-        <h2>Duidelijke afspraken</h2>
-        <div class="price-line">
-          <div>
-            <strong data-bind="priceLabel">Tarief op aanvraag</strong>
-            <span data-bind="priceDetail">Voor een individuele bijles van 60 minuten.</span>
+        <div class="faq-card" id="vragen">
+          <p class="eyebrow">VRAGEN</p>
+          <h2>Veelgestelde vragen</h2>
+          <div class="faq">
+            <details><summary>Voor welke niveaus geef je bijles?</summary><p>Van de eerste jaren middelbaar tot universitaire vakken. De aanpak en diepgang worden volledig aangepast aan het niveau van de leerling of student.</p></details>
+            <details><summary>Kan de bijles ook online?</summary><p>Ja. Online lessen kunnen via een videoplatform met schermdeling en een digitaal bord. MATLAB, schema's en visualisaties kunnen daarbij rechtstreeks gedeeld worden.</p></details>
+            <details><summary>Gebruik je altijd MATLAB of Illustrator?</summary><p>Nee. Alleen wanneer een visualisatie echt helpt. Soms is een eenvoudige schets of een paar goed gekozen oefeningen veel efficiënter.</p></details>
+            <details><summary>Kan ik hulp krijgen voor één examen of hoofdstuk?</summary><p>Zeker. Bijles kan eenmalig of terugkerend zijn. Stuur vooraf zo veel mogelijk cursusmateriaal door zodat we de beschikbare tijd gericht kunnen gebruiken.</p></details>
+            <details><summary>Kom je ook aan huis?</summary><p><span data-bind="travelText"></span></p></details>
+            <details><summary>Wat als een les niet kan doorgaan?</summary><p><span data-bind="cancellationText"></span></p></details>
           </div>
-          <span class="price-note">Geen registratie- of administratiekosten.</span>
-        </div>
-        <p>
-          De eerste kennismaking is gratis. We bespreken kort je vak, niveau, leerdoel en de manier waarop ik je het best kan helpen.
-          Voor langere sessies of terugkerende begeleiding kunnen we praktische afspraken maken die bij je planning passen.
-        </p>
-      </div>
-      </div>
-    </section>
-
-    <div class="wrap"><hr></div>
-
-    <section class="section" id="vragen">
-      <div class="wrap">
-        <div class="content-width">
-        <p class="eyebrow">VRAGEN</p>
-        <h2>Veelgestelde vragen</h2>
-        <div class="faq">
-          <details>
-            <summary>Voor welke niveaus geef je bijles?</summary>
-            <p>Van de eerste jaren middelbaar tot universitaire vakken. De aanpak en diepgang worden volledig aangepast aan het niveau van de leerling of student.</p>
-          </details>
-          <details>
-            <summary>Kan de bijles ook online?</summary>
-            <p>Ja. Online lessen kunnen via een videoplatform met schermdeling en een digitaal bord. MATLAB, schema's en visualisaties kunnen daarbij rechtstreeks gedeeld worden.</p>
-          </details>
-          <details>
-            <summary>Gebruik je altijd MATLAB of Illustrator?</summary>
-            <p>Nee. Alleen wanneer een visualisatie echt helpt. Soms is een eenvoudige schets of een paar goed gekozen oefeningen veel efficiënter.</p>
-          </details>
-          <details>
-            <summary>Kan ik hulp krijgen voor één specifiek examen of hoofdstuk?</summary>
-            <p>Zeker. Bijles kan eenmalig of terugkerend zijn. Stuur vooraf zo veel mogelijk cursusmateriaal door zodat we de beschikbare tijd gericht kunnen gebruiken.</p>
-          </details>
-          <details>
-            <summary>Kom je ook aan huis?</summary>
-            <p><span data-bind="travelText">We spreken af in Hasselt en omgeving of online. Vul in het configuratiebestand je exacte regio en verplaatsingsvoorwaarden in.</span></p>
-          </details>
-          <details>
-            <summary>Wat als een les niet kan doorgaan?</summary>
-            <p><span data-bind="cancellationText">Laat dit zo vroeg mogelijk weten. Vul in het configuratiebestand je definitieve annuleringsvoorwaarden in.</span></p>
-          </details>
         </div>
       </div>
-      </div>
     </section>
-
-    <div class="wrap"><hr></div>
 
     <section class="section contact-section" id="contact">
       <div class="wrap">
-        <div class="content-width">
-        <p class="eyebrow">CONTACT</p>
-        <h2>Plan een gratis kennismaking</h2>
-        <p>Stuur me gerust een berichtje met het vak, je jaar en waar het moeilijk loopt. Ik antwoord zo snel mogelijk.</p>
-        <div class="contact-actions">
-          <a class="btn btn-primary" data-bind-href="whatsAppHref" href="#">Stuur een WhatsApp</a>
-          <a class="btn btn-secondary" data-bind-href="emailHref" href="#"><span data-bind="email">[e-mailadres]</span></a>
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow eyebrow-light">CONTACT</p>
+            <h2>Waar loop je op vast?</h2>
+            <p>Stuur me het vak, je jaar en waar het moeilijk loopt. Dan bekijken we samen of en hoe ik je kan helpen.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-light" data-bind-href="whatsAppHref" href="#">Stuur een WhatsApp</a>
+            <a class="btn btn-ghost" data-bind-href="emailHref" href="#"><span data-bind="email">cedrickeibeck.bijles@gmail.com</span></a>
+            <p class="contact-phone">Liever bellen? <a data-bind-href="phoneHref" href="#"><span data-bind="phoneDisplay">+32 469 25 52 40</span></a></p>
+          </div>
         </div>
-        <p class="muted">Liever bellen? Dat kan op <a data-bind-href="phoneHref" href="#"><span data-bind="phoneDisplay">[telefoonnummer]</span></a>.</p>
-      </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="wrap footer-inner">
-      <span><span data-bind="fullName">[Jouw naam]</span></span>
+      <span><strong data-bind="fullName">Cedric Keibeck</strong> · bijles met inzicht</span>
       <span class="footer-spacer"></span>
+      <a href="https://bijlescedric.be/">bijlescedric.be</a>
       <span>© <span id="year"></span></span>
     </div>
   </footer>

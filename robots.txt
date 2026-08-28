@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cedrickeibeck.github.io/bijles-website/sitemap.xml
+Sitemap: https://bijlescedric.be/sitemap.xml
